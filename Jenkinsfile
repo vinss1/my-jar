@@ -2,7 +2,7 @@ node {
     stage ("Build") {
         checkout scm
         withMaven() {
-            sh "./mvnw clean install"
+            sh "./mvnw clean deploy"
         }
     }
 }
